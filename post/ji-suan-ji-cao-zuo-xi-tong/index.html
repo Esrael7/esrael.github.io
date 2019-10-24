@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>计算机操作系统 | Esrael`s Notes</title>
+<meta name="description" content="Stay Hungry , Stay Foolish" />
+<link rel="shortcut icon" href="https://esrael7.github.io//favicon.ico?v=1571878785164">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://esrael7.github.io//styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://esrael7.github.io/">
+  <img class="avatar" src="https://esrael7.github.io//images/avatar.png?v=1571878785164" alt="">
+  </a>
+  <h1 class="site-title">
+    Esrael`s Notes
+  </h1>
+  <p class="site-description">
+    Stay Hungry , Stay Foolish
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          Home
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          Tags
+        </a>
+      
+    
+      
+        <a href="https://github.com/" class="menu" target="_blank">
+          Github
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              计算机操作系统
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-09-03
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://esrael7.github.io//tag/5rFDSJP2g" class="post-tag">
+                  # 计算机课程
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://static001.geekbang.org/resource/image/ac/7f/ac8f5beab92e89541d8c197ab9fb6b7f.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>1.五大操作系统<br>
+2.CPU 内存 硬盘 I/O设备<br>
+3.指令两大类：特权指令和非特权指令<br>
+4.批处理系统:简单（单道）批处理，多道批处理<br>
+5.进程调度和作业调度<br>
+6.计算密集型和I/O密集型   <em>是否CPU的参与</em><br>
+7.并发处理和并行处理   <em>并发：宏观上的并行，微观上的串行</em><br>
+8.现在操作系统的功能：内存管理，处理机管理，作业管理，I/O设备管理，文件管理,人机交互<br>
+9.分时系统（Time sharing system）与实时系统（分为软实时系统与硬实时系统）<br>
+10.作业&gt;进程&gt;线程<br>
+11.进程的状态模式：运行态，就绪态，阻塞态，（新建态，退出态）<br>
+12.进程：本质上是一个正在执行的程序，是一个动态的概念<br>
+13.地址空间：一个程序可以使用的地址的集合<br>
+14.虚拟存储<br>
+15.数据应该受到保护：存储[访问保护，反病毒保护，实体安全保护]，处理，传输[完整，机密，认证，非否认]<br>
+16.中断，陷阱，异常<br>
+17.进程的同步和互斥<br>
+18.进程间通信方式：管道（流管道和有名管道），信号，消息队列，共享内存，信号量，套接字（socket）<br>
+18.内存分配方式：从全局存储区域分配，从栈区分配，从堆中分配<br>
+19.进程的执行模型：顺序进行和并行进行<br>
+20.进程控制块PCB：用于控制进程属性的集合。<br>
+21.进程映像：进程的程序，数据，堆，栈的集合。<br>
+22.子进程可以继承父进程所拥有的资源。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  By Esrael Abdughini | 
+  <a class="rss" href="https://esrael7.github.io//atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
